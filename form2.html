@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>Personal Details</legend>
+      <form>
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">Female</label>
+
+        <hr />
+
+        <select name="preference" id="prefs" required>
+          <option value="null" selected disabled hidden>
+            Select an Option
+          </option>
+          <option value="java">Java</option>
+          <option value="python">Python</option>
+          <option value="cpp">C++</option>
+          <option value="node">Node</option>
+        </select>
+
+        <hr />
+
+        <input type="checkbox" name="pref" id="jv" value="java" />
+        <label for="jv">Java</label>
+        <input type="checkbox" name="pref" id="py" value="java" />
+        <label for="py">Python</label>
+        <br />
+        <input type="checkbox" name="pref" id="cpp" value="java" />
+        <label for="cpp">C++</label>
+        <input type="checkbox" name="pref" id="nd" value="java" />
+        <label for="nd">Node</label>
+
+        <hr />
+        <textarea
+          name="description"
+          id="desc"
+          cols="30"
+          rows="10"
+          placeholder="Description"
+          required
+        ></textarea>
+      </form>
+    </fieldset>
+
+    <hr />
+
+    <img
+      src="https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg"
+      alt="Some Image"
+      width="400px"
+    />
+
+    <video
+      src="./pexels-koolshooters-8976549.mp4"
+      width="500px"
+      autoplay
+      muted
+      controls
+      loop
+    ></video>
+  </body>
+</html>
