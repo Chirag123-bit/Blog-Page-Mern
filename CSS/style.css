@@ -1,0 +1,46 @@
+body {
+    background-image: url("https://images5.alphacoders.com/112/thumb-1920-1123013.jpg");
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+}
+
+#paraOne {
+    width: 55%;
+    border: 1px dashed red;
+    background-color: aqua;
+    color: green;
+    line-height: 50px;
+    word-spacing: 20px;
+}
+
+#boxTwo h1 {
+    /* text-decoration: overline; */
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+#p2 {
+    font-size: 30px;
+    /* font-weight: 900; */
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+}
+
+
+#box3 {
+    width: 500px;
+    height: 500px;
+    background-color: red;
+    border-radius: 20px;
+}
+
+.box4 {
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    border: 10px solid greenyellow;
+    padding: 50px;
+}
