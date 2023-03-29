@@ -15,55 +15,61 @@
         width: 200px;
         height: 40px;
         border: none;
-        cursor: pointer;
-        background-color: orange;
+        font-size: 22px;
         color: white;
+        background-color: orange;
         border-radius: 10px;
-        transition: all 0.5s ease-in-out;
-        font-size: 16px;
         margin: 2rem;
+        transition: all 0.8s ease-in-out;
       }
+
       #btnOne:hover {
-        background-color: rgb(186, 123, 6);
-        transition: all 0.5s ease-in-out;
+        background-color: orangered;
+        transition: all 0.8s ease-in-out;
       }
 
       #btnTwo {
-        background-color: blue;
+        background-color: green;
       }
+
       #btnTwo:hover {
-        transition: all 0.5s ease-in-out;
         transform: scale(1.1);
       }
+
       #btnThree {
-        border: 10px solid orange;
+        background-color: blue;
+        border: 2px solid blue;
       }
 
       #btnThree:hover {
-        transition: all 0.5s ease-in-out;
         background-color: transparent;
-        color: black;
+        color: blue;
       }
+
       .boxOne {
         width: 200px;
         height: 200px;
         background-color: orange;
-        margin-top: 2rem;
-        margin-left: 2rem;
+        font-size: 30px;
         color: white;
-        font-size: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
-        transition: all 0.5s ease-in-out;
+        margin: 4rem;
+        margin-left: 20rem;
+        transition: all 0.8s ease-in-out;
       }
 
       .boxOne:hover {
-        transition: all 0.5s ease-in-out;
         /* transform: scale(0.8); */
-        transform: rotate(-45deg);
-        /* transform: rotateX(180deg);
-        transform: rotateY(250deg); */
+        /* transform: rotateZ(360deg); */
+        /* transform: rotateX(90deg); */
+        /* transform: rotateY(180deg); */
+        /* transform: translateX(200px);
+        transform: translateY(-200px); */
+        /* transform: translate(200px, 200px); */
+        /* transform: skewX(50deg, 60deg); */
+        transform: scale(1.2) rotate(80deg) translate(200px, 300px);
       }
     </style>
   </head>
@@ -73,6 +79,7 @@
     <button id="btnThree">Button Three</button>
 
     <hr />
-    <div class="boxOne">Box One</div>
+
+    <div class="boxOne">Box</div>
   </body>
 </html>
