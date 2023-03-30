@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* position -> sticky(default) relative absolute  fixed sticky*/
+      /* Relative -> Relative To current position */
+      /* Absolute -> Parent position  dependent*/
+      /* Fixed -> Fixes an element within the screen */
+      /* Sticky -> Attaches an element to Screen after it crosses specified height */
+      .boxOne {
+        width: 400px;
+        height: 400px;
+        background-color: orange;
+        position: relative;
+        margin: 2rem;
+        /* top: 100px;
+        left: 200px; */
+      }
+      .boxTwo {
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+        position: sticky;
+        top: 50px;
+      }
+      .boxThree {
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        position: fixed;
+        top: 0px;
+        left: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="boxOne">
+      <div class="boxTwo"></div>
+    </div>
+    <div class="boxOne">
+      <div class="boxTwo"></div>
+    </div>
+    <div class="boxOne">
+      <div class="boxTwo"></div>
+    </div>
+    <div class="boxOne">
+      <div class="boxTwo"></div>
+    </div>
+    <div class="boxOne">
+      <div class="boxTwo"></div>
+    </div>
+    <div class="boxOne">
+      <div class="boxTwo"></div>
+    </div>
+    <div class="boxOne">
+      <div class="boxTwo"></div>
+    </div>
+    <div class="boxOne">
+      <div class="boxTwo"></div>
+    </div>
+    <div class="boxOne">
+      <div class="boxTwo"></div>
+    </div>
+    <div class="boxOne">
+      <div class="boxTwo"></div>
+    </div>
+    <div class="boxThree"></div>
+  </body>
+</html>
