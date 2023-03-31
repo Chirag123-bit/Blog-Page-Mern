@@ -1,0 +1,14 @@
+// Console, Prompt, Alert
+// Variables (let, const, var)
+// Data Types (String, Boolean, Numbers, Array, Objects)
+// Array Methods (Push, pop, slice, splice, toString, join,
+//                shift, unshift, concat, splice, slice)
+
+// Arithmetic Operators (+,-,*,/,%, **)
+// Comparision Operators (==, ===)
+// If Else
+// Template Literals
+// For Loop
+// Functions
+
+// DOM Manipulation
