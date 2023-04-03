@@ -74,14 +74,38 @@
 // console.log(newString2)
 
 
-let array = [10, 50, 558, 6515, 0515, 5154] //6
+let array = [10, 50, 558, 6515, 0515, 5154]
+let array1 = [18, 50, 554, 15, 0515, 5154]
+let array2 = [18, 50, 67, 15, 766, 767]
 
 // Initilization; Condition; Increment/Decrement 
 // i++ = i+1
 
-for (let i = 0; i < array.length; i++) {
-    console.log(array[i])
+// function averageOfAnArray(array) {
+//     let sum = 0
+
+//     for (let i = 0; i < array.length; i++) {
+//         sum += array[i]
+//     }
+//     let avg = sum / array.length
+//     console.log(avg)
+// }
+
+//Arrow Function
+const averageOfAnArray = (array) => {
+    let sum = 0
+
+    for (let i = 0; i < array.length; i++) {
+        sum += array[i]
+    }
+    let avg = sum / array.length
+    console.log(avg)
 }
+// Static-Typed, Dynamic ....
+// int i = 0
+// String abc = "Hello"
+// abc = 10
 
-
-// Variable Pollution
+averageOfAnArray(array)
+averageOfAnArray(array1)
+averageOfAnArray(array2)
