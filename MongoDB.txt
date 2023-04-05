@@ -1,0 +1,121 @@
+To show all databases -> show dbs
+
+To Show Current Database ->db
+
+New/Switch Database -> use db_name
+
+To create a collection(table) -> db.createCollection("name")
+
+To show collections in a database -> show collections
+
+db.users.insertOne({
+ name:"Chirag",
+ age:30,
+ address:"Kathmandu"
+ });
+
+
+db.users.insertMany([
+	{
+ name:"Ramesh",
+ age:50,
+ address:"Pokhara"
+ },
+{
+ name:"Chirag",
+ age:88,
+ location:"Chitwan"
+ },
+{
+ name:"Hari",
+ age:62,
+ address:"Bhaktapur"
+ },
+{
+ name:"Leo",
+ age:15,
+ address:"Lalitpur"
+ }
+]);
+
+
+
+db.users.insertMany([{},{}])
+
+
+
+
+db.users.find();
+
+
+
+db.users.find({key:value})
+
+
+db.users.find({$and:[{condition1},{condition2}]})
+
+
+Finding document
+	db.collection_name.find()
+
+
+Find one row
+	db.collection_name.find({key:"value"})
+
+Sort rows
+	db.collection_name.find().sort({key:1}) //1 for ascending, -1 for descending
+
+Count Rows
+	db.collection_name.find().count()
+
+Limit rows
+	db.collection_name.find().limit(2)
+
+
+Combining Conditions (and, or)
+	
+	db.users.find($and:[{name:"Chirag"},{age:33}])
+
+
+Comparision Operators (gte, lte, ne)
+	db.users.find({age:{$gte:25}})
+
+
+
+Update one document (set, unset, rename)
+	db.collection_name.update({"field":"to_be_searched"}, {$set:{"field":"to_be_changed"}})
+
+
+Upserta a document
+	db.collection_name.update({"field":"to_be_searched"}, {$set:{"field":"to_be_changed"}}, {upsert:true})
+
+
+
+Increment Operator $inc
+
+db.users.updateMany({},{$inc:{age:2}}) //increases age of all users by 2
+
+
+Rename Operator $rename
+	db.users.updateMany({name:"Roshan1"},{$rename:{age:"ageNumber"}})    
+
+Delete Row remove
+	db.users.deleteOne({name:"Chirag"})
+
+
+Array add or remove Elements
+	
+	db.collection.updateOne({"field":"to search"},{$push:{"array":"element"}})
+	
+	db.collection.updateOne({"field":"to search"},{$pull:{"array":1}}) // 1 for last, 0 for first
+
+
+
+Array Search for a specific value
+	db.users.find({skill:"Django"})
+
+	
+
+Array Search for all field (all)
+	db.applicants.find({skills:{$all:["Python","Django"]}})
+
