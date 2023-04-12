@@ -1,0 +1,56 @@
+.carousel-inner {
+    max-height: 100vh;
+}
+
+.left-section {
+    width: 55%;
+}
+
+.right-section {
+    width: 25%;
+    border: 2px solid orange;
+    height: max-content;
+    padding: 3rem 1.5rem;
+}
+
+.left-top-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left-mid-section {
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid black;
+    padding: 1rem;
+    padding-bottom: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature i {
+    font-size: 1.5rem;
+}
+
+.feature p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.left-bottom-section {
+    text-align: justify;
+}
+
+.input-group input {
+    width: 100%;
+}
+
+.input-group {
+    margin-bottom: 2rem;
+}

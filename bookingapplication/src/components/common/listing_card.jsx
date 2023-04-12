@@ -1,18 +1,23 @@
 import React from 'react'
-import image1 from "../../static/images/1.png"
-import "./card.css"
 
-const ListingCard = () => {
+import "./card.css"
+import { Link } from 'react-router-dom'
+
+const ListingCard = ({listing}) => {
+
   return (
     <div className="listing_card">
         <div className="image-container">
-            <img src={image1} alt="asdsa" />
+            <img src={listing.image} alt="asdsa" />
         </div>
-        <h2 id="listing-country">Kathmandu, Nepal</h2>
-        <p>Rs. 50000</p>
+        <h2 id="listing-country">{listing.address}</h2>
+        <p>Rs. {listing.cost}</p>
 
         <div className="button-container text-center">
+          
+          <Link to="/accom">
           <button className='btn btn-warning'>View Details</button>
+          </Link>
         </div>
     </div>
   )
