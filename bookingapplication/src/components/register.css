@@ -1,0 +1,43 @@
+.registerPageContainer {
+    margin-top: 8rem;
+}
+
+.form-container {
+    width: 60%;
+    border: 2px solid orange;
+    margin: auto;
+    border-radius: 1rem;
+
+}
+
+#name-container input {
+    width: 45%;
+}
+
+#name-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.inp-container input {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 1px solid orange;
+    width: 100%;
+    color: orange;
+}
+
+.inp-container input::placeholder {
+    color: orange;
+}
+
+.inp-container input:focus {
+    outline: none;
+}
+
+.inp-container {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 2rem;
+}
