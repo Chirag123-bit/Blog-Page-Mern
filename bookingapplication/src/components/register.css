@@ -41,3 +41,30 @@
     margin: auto;
     margin-bottom: 2rem;
 }
+
+.search-container {
+    width: 50%;
+    margin: auto;
+    margin-top: 7rem;
+    position: relative;
+}
+
+.search-container input {
+    width: 100%;
+    border-radius: 1.5rem;
+    padding: 0.7rem 2rem;
+    border: 2px solid orange;
+    color: orange;
+}
+
+.search-container input:focus {
+    outline: none;
+}
+
+.search-container i {
+    position: absolute;
+    font-size: 1.5rem;
+    color: orange;
+    top: 0.8rem;
+    right: 2rem;
+}
