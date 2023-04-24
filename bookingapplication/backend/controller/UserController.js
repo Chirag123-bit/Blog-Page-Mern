@@ -83,6 +83,58 @@ module.exports.login = async (req, res, next) => {
 }
 
 
+module.exports.logout = async (req, res, next) => {
+    try {
+        res.cookie("token", null, {
+            expires: new Date(Date.now()),
+            httpOnly: true
+        })
+        return res.status(200).json({
+            "status": true,
+            "message": "You have been logged out"
+        })
 
+    } catch (error) {
+        return res.status(500).json({
+            "status": false,
+            "message": "Some Error Occured"
+        })
+    }
+}
+
+
+module.exports.mydetails = async (req, res, next) => {
+    try {
+        return res.status(200).json({
+            "status": true,
+            "data": req.user
+        })
+    } catch (error) {
+        return res.status(500).json({
+            "status": false,
+            "message": "Some Error Occured"
+        })
+    }
+}
+
+
+
+module.exports.updateProfile = async (req, res, next) => {
+    try {
+        const { fname, lname } = req.body;
+        const user = await User.findByIdAndUpdate(req.user._id, { fname, lname }, {
+            new: true
+        })
+        return res.status(200).json({
+            "status": true,
+            user
+        })
+    } catch (error) {
+        return res.status(500).json({
+            "status": false,
+            "message": "Some Error Occured"
+        })
+    }
+}
 
 
